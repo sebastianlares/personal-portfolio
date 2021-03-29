@@ -1,0 +1,23 @@
+$primary-color: #777171;
+$secondary-color: #ffff;
+$hover-primary: black;
+
+@mixin h3Primary($color) {
+  color: $color;
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@mixin flexCenter($display, $justify, $direction) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $direction;
+}
+
+@mixin transformHover($scale) {
+  z-index: 10;
+  transform: scale($scale);
+  transition: all 0.4s ease-out;
+}
