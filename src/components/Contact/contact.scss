@@ -1,0 +1,95 @@
+@import "../../styles/baseStyles";
+@import "../Profile/profile.scss";
+
+.contact-container {
+  @include flexCenter(flex, center, center);
+  @extend .profile-container;
+  background-image: url(../../images/wave3.svg);
+  padding-bottom: 280px;
+
+  flex-direction: column;
+  margin-top: 0;
+  h3 {
+    @include h3Primary($primary-color);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  form {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 7px;
+      border-radius: 4px;
+      border: 1px solid $primary-color;
+      height: 20px;
+    }
+    label {
+      font-size: 13px;
+      color: $primary-color;
+      padding-bottom: 7px;
+      text-transform: uppercase;
+    }
+    textarea {
+      height: 60px;
+      margin-bottom: 7px;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 120px;
+      height: 38px;
+      margin-top: 10px;
+      background: inherit;
+      border: 1px solid $primary-color;
+      border-radius: 20px;
+      align-self: center;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 1px solid black;
+      }
+    }
+  }
+  .links {
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid black;
+        color: black;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .contact-container {
+    form {
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: 351px) and (max-width: 1500px) {
+  .contact-container {
+    padding-bottom: 360px;
+    form {
+      width: 300px;
+    }
+  }
+}
