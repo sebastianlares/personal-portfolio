@@ -26,7 +26,7 @@ function Projects() {
           <div key={id} className="wrapper">
             <div
               className="project"
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-duration="1200"
             >
               <div className="carousel">
@@ -59,7 +59,7 @@ function Projects() {
             </div>
             <div
               className="line"
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-duration="1200"
             />
           </div>

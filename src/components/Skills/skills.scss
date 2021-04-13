@@ -41,6 +41,7 @@
 
 @media (max-width: 600px) {
   .skills-container {
+    padding-top: 175px;
     margin-top: -275px;
     .skills {
       grid-template-columns: repeat(2, 100px);
@@ -50,7 +51,8 @@
 
 @media (min-width: 601px) and (max-width: 900px) {
   .skills-container {
-    margin-top: -250px;
+    padding-top: 170px;
+    padding-bottom: 360px;
     .skills {
       grid-template-columns: repeat(2, 1fr);
     }
