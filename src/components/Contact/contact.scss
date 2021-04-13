@@ -5,7 +5,6 @@
   @include flexCenter(flex, center, center);
   @extend .profile-container;
   background-image: url(../../images/wave3.svg);
-  padding-bottom: 280px;
 
   flex-direction: column;
   margin-top: 0;
@@ -121,9 +120,9 @@
   }
 }
 
-@media (min-width: 351px) and (max-width: 1500px) {
+@media (min-width: 300px) and (max-width: 1500px) {
   .contact-container {
-    padding-bottom: 360px;
+    padding-bottom: 460px;
     form {
       width: 300px;
     }
