@@ -7,14 +7,15 @@ function Profile() {
       <div className="profile">
         <div className="welcome">
           <h3>
-            Hello there! <br></br>my name is Sebastian Lares
+            Hello there! <br></br>My name is Sebastian Lares
           </h3>
         </div>
         <p>
-          I'm a Front End Developer from Buenos Aires, Argentina, and making new
-          projects and websites is my passion.<br></br> I specialize in
-          JavaScript and React.js, but I'm always learning new technologies and
-          ways to make simpler and cleaner applications. Check out my work!
+          I'm a Front End Developer from Buenos Aires, Argentina, specialized in
+          JavaScript and React.js, always learning new technologies and ways to
+          make simpler and cleaner applications.
+          <br />
+          Take a look around and check out my work!
         </p>
       </div>
     </section>
