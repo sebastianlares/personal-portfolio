@@ -30,7 +30,7 @@ function Navbar() {
     const setActiveEl = () => {
       if (window.scrollY < 800) setActive(0);
       else if (window.scrollY >= 800 && window.scrollY < 1555) setActive(1);
-      else if (window.scrollY >= 1555 && window.scrollY < 3330) setActive(2);
+      else if (window.scrollY >= 1630 && window.scrollY < 3330) setActive(2);
       else if (window.scrollY >= 3330) setActive(3);
     };
     window.addEventListener("scroll", setActiveEl);

@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.scss";
 import { skillsData } from "../../data/skillsData";
+
 function Skills() {
   return (
     <section className="skills-container">

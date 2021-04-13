@@ -46,7 +46,13 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h3>Get in touch</h3>
+      <div className="img-container">
+        <h3>Get in touch</h3>
+        <img
+          src="https://image.freepik.com/free-vector/e-mail-news-subscription-promotion-flat-vector-illustration-design-newsletter-icon-flat_1200-332.jpg"
+          alt="email"
+        />
+      </div>
       <form
         onSubmit={submitHandler}
         data-aos="flip-up"

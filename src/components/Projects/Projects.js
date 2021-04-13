@@ -12,7 +12,14 @@ function Projects() {
 
   return (
     <section className="projects-container">
-      <h3>Projects</h3>
+      <div className="img-container">
+        <h3>Projects</h3>
+        <img
+          src="https://i.pinimg.com/474x/3c/7c/34/3c7c343f3c30a7684c9f53007e102ff9.jpg"
+          alt="projects"
+          className="project-img"
+        />
+      </div>
       {projectsData.map((i) => {
         const { pictures, description, link, id } = i;
         return (
