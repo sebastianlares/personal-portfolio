@@ -8,6 +8,8 @@ function Contact() {
   const [email, setEmail] = useState();
   const [checkEmail, setCheckEmail] = useState(false);
 
+  const API_KEY = process.env.REACT_APP_EMAILJS_API_KEY;
+
   const submitHandler = (e) => {
     e.preventDefault();
     checkEmail && setETarget(e.target);
@@ -27,12 +29,7 @@ function Contact() {
   useEffect(() => {
     eTarget &&
       emailjs
-        .sendForm(
-          "portfolio_contact",
-          "portfolio_contact",
-          eTarget,
-          "user_u0xF8QKnS0j742vMwN2Am"
-        )
+        .sendForm("portfolio_contact", "portfolio_contact", eTarget, API_KEY)
         .then(
           ((err) => {
             alert("Something went wrong. Please try again!");

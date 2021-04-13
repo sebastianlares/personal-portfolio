@@ -12,8 +12,9 @@ function Profile() {
         </div>
         <p>
           I'm a Front End Developer from Buenos Aires, Argentina, specialized in
-          JavaScript and React.js, always learning new technologies and ways to
-          make simpler and cleaner applications.
+          JavaScript and React.js. <br /> In constant search for new
+          technologies to make simpler and cleaner applications, finding a new
+          one and learning it to it's core is what I'm most passionate about.
           <br />
           Take a look around and check out my work!
         </p>
