@@ -25,7 +25,6 @@ function Navbar() {
         .scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  console.log(window.scrollY);
   useEffect(() => {
     const setActiveEl = () => {
       if (window.scrollY < 800) setActive(0);
