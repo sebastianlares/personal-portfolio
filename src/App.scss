@@ -1,6 +1,7 @@
 @import "./styles/baseStyles";
 
 .App {
+  overflow: hidden;
   @include flexCenter(flex, center, baseline);
   flex-direction: column;
   height: fit-content;
