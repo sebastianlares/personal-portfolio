@@ -35,7 +35,6 @@ function Projects() {
                   infinite={true}
                   disableDotsControls={true}
                   items={pictures.map((pic, index) => {
-                    console.log(pic);
                     return (
                       <a
                         href={link}
@@ -59,7 +58,7 @@ function Projects() {
             </div>
             <div
               className="line"
-              data-aos="fade-right"
+              data-aos={window.innerWidth > 1200 ? "fade-left" : "fade-up"}
               data-aos-duration="1200"
             />
           </div>
